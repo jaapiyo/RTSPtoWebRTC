@@ -21,12 +21,12 @@
       </div>
     </div>
     <div class="col">
-      <input  name="suuid" id="suuid" value="{{ .suuid }}">
-      <input  name="port" id="port" value="{{ .port }}">
-      <input  id="localSessionDescription" readonly="true">
-      <input  id="remoteSessionDescription">
+      <input hidden name="suuid" id="suuid" value="{{ .suuid }}">
+      <input hidden name="port" id="port" value="{{ .port }}">
+      <input hidden id="localSessionDescription" readonly="true">
+      <input hidden id="remoteSessionDescription">
       <div id="remoteVideos">
-        <video style="width:600px" id="videoElem" autoplay muted controls></video>
+        <video style="width:600px" id="videoElem" autoplay muted></video>
       </div>
       <div id="div"></div>
     </div>
